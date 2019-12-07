@@ -49,7 +49,14 @@ nav[2].textContent = siteContent["nav"]["nav-item-3"];
 nav[3].textContent = siteContent["nav"]["nav-item-4"];
 nav[4].textContent = siteContent["nav"]["nav-item-5"];
 nav[5].textContent = siteContent["nav"]["nav-item-6"];
-
+const navBar = document.querySelector('nav');
+const newLink = document.createElement('a')
+navBar.appendChild(newLink);
+console.log(newLink);
+newLink.textContent = 'look here'
+navBar.prepend(newLink);
+console.log(newLink);
+newLink.textContent = 'look here'
 const ctaImg = document.querySelector("#cta-img");
 ctaImg.src = siteContent["cta"]["img-src"];
 
@@ -61,7 +68,7 @@ ctaBtn.textContent = siteContent["cta"]["button"];
 
 
 
-//mid content 
+//mid stuff 
 
 const middleImg = document.querySelector("#middle-img");
 middleImg.src = siteContent["main-content"]["middle-img-src"];
